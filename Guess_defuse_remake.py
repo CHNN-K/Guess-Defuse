@@ -77,7 +77,8 @@ class Game():
                 print(f"Game mode      : {self.selectedGamemode}")
                 print(f"Description    : {self.gamemode_description}")
                 print(f"================================")
-        except:
+        except Exception as e:
+            print (e)
             print("\n")
             print(">>> Error. Please try again")
             print("\n")
